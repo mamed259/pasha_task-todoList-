@@ -12,7 +12,7 @@ export class FilterList extends Component {
                             index={index}
                             todo={todo}
                             completeTodo ={this.completeTodo}
-                            removeTodo={this.removeTodo }
+                            removeTodo={this.removeTodo}
                             placeholder = "Add text..."
                         />
                         )}

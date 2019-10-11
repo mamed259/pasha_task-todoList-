@@ -24,7 +24,8 @@ export class App extends Component {
             ]
         };
 
-        this.addTodo = this.addTodo.bind(this)
+        this.addTodo = this.addTodo.bind(this);
+        this.removeTodo = this.removeTodo.bind(this)
     }
 
   addTodo(text) {
@@ -40,7 +41,7 @@ export class App extends Component {
   removeTodo(index) {
       const newTodos = [...this.state.todos];
       newTodos.splice(index, 1);
-      this.setState(newTodos);
+      this.setState({ todos: newTodos });
   };
 
   completeTodo(index) {

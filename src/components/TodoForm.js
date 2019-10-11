@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class TodoForm extends Component {
     constructor (props) {
-        super(props)
+        super(props);
 
         this.state = {
             inputValue: ''
@@ -15,7 +15,7 @@ export class TodoForm extends Component {
         if (!this.state.inputValue) return;
 
         this.props.addTodo(this.state.inputValue);
-    }
+    };
 
     render() {
         return (
