@@ -20,7 +20,7 @@ export class TodoForm extends Component {
     render() {
         return (
             <form onSubmit={this.addTodo}>
-                <input type="text" value={this.state.inputValue} onChange={e => this.setState({ inputValue: e.target.value })} />
+                <input type="text" value={this.state.inputValue} onChange={e => this.setState({ inputValue: e.target.value })} required/>
                 <button>Add Todo</button>
             </form>
         )
